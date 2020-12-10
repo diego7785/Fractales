@@ -20,25 +20,39 @@
 				border-radius: 50px;
 			}
 
-			#boton{
+			#three{
 				position:absolute;
 				width:18%;
-				top:60%;
-				left:40%;
+				top:45%;
+				left:15%;
 				outline: none;
 			}
 
-			#boton:hover{
-				left:39.5%;
+			#three:hover{
+				left:14.5%;
 				width:19%;
 			}
 
-			#title{
+			#chooseText{
 				position: absolute;
-				width: 50vw;
-				left: 22%;
+				width: 60vw;
+				left: 20%;
 				top: 13%;
 			}
+
+            #back{
+                position: absolute;
+                top: 2%;
+                left: 2%;
+                width:3vw;
+            }
+
+            #back:hover{
+                position: absolute;
+                top: 2%;
+                left: 2%;
+                width:3.1vw;
+            }
 
 			@media screen and (min-width: 320px) and (orientation: portrait) {
 				#pop{
@@ -70,14 +84,18 @@
 
 	<body>
 		<div id="pop">
-			<img src="assets/img/title.png" id="title">
-			<img src="assets/img/start.png" id="boton">
+            <img src="../assets/img/back.png" id="back">
+			<img src="../assets/img/choose.png" id="chooseText">
+			<img src="../assets/img/threeButton.png" id="three">
 
 		</div>
 	</body>
 	<script>
-		document.getElementById("boton").addEventListener("click", function(){
-			window.location.assign("choose/index.html");
-		})
+		document.getElementById("three").addEventListener("click", function(){
+			window.location.assign("../three/index.html");
+        })
+        document.getElementById("back").addEventListener("click", function(){
+            window.location.assign("../index.html");
+        })
 	</script>
 </html>

@@ -7,7 +7,7 @@ function setup() {
     createCanvas(windowWidth, windowHeight);
 
     // Slider para cambiar el angulo de ramificacion 
-    slider = createSlider(1, 50, 4,0.1);
+    slider = createSlider(1, 50, 7,0.1);
     slider.position(windowWidth-100, 10);
     slider.style('width', '80px');
 }
@@ -55,7 +55,7 @@ function branch(length){
 
 function mousePressed() {
     if(mouseX>20 && mouseX<60 && mouseY<60 && mouseY>15) {
-        window.location.replace('../index.html');
+        window.location.replace('../choose/index.html');
     }
 }
 
