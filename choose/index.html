@@ -33,6 +33,19 @@
 				width:19%;
 			}
 
+            #mandelbrot{
+                position: absolute;
+                width:18%;
+				top:45%;
+				left:35%;
+				outline: none;
+            }
+
+            #mandelbrot:hover{
+				left:34.5%;
+				width:19%;
+			}
+
 			#chooseText{
 				position: absolute;
 				width: 60vw;
@@ -86,7 +99,9 @@
 		<div id="pop">
             <img src="../assets/img/back.png" id="back">
 			<img src="../assets/img/choose.png" id="chooseText">
-			<img src="../assets/img/threeButton.png" id="three">
+            <img src="../assets/img/threeButton.png" id="three">
+			<img src="../assets/img/mandelbrot.png" id="mandelbrot">
+            
 
 		</div>
 	</body>
@@ -96,6 +111,9 @@
         })
         document.getElementById("back").addEventListener("click", function(){
             window.location.assign("../index.html");
+        })
+        document.getElementById("mandelbrot").addEventListener("click", function(){
+            window.location.assign("../mandelbrot/index.html");
         })
 	</script>
 </html>

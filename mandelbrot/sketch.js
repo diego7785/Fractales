@@ -1,4 +1,4 @@
-let sf = 1; // factor de escala del zoom
+/*let sf = 1; // factor de escala del zoom
 
 
 let mx, my; // coordenadas del mouse
@@ -10,10 +10,6 @@ function setup() {
     slider = createSlider(1, 50, 7,0.1);
     slider.position(windowWidth-100, 10);
     slider.style('width', '80px');
-
-    sliderII = createSlider(2, 200, 7,2);
-    sliderII.position(windowWidth-100, 30);
-    sliderII.style('width', '80px');
 }
 
 function draw() {
@@ -36,18 +32,18 @@ function draw() {
     translate(width/2, height); 
     stroke(207, 136, 70);
     branch(150);
+    translate(0, -150);
 }
 
 // Crea las ramas del árbol de forma recursiva cambiando el ángulo de creación de las mismas
 function branch(length){
     line(0,0,0,-length); // Crea la linea
     translate(0,-length);
-    let valSII = sliderII.value();
-    if(length > valSII){
+    if(length > 5){
         let val = slider.value();
 
         push(); 
-            rotate(PI/val); // Rota PI/val grados la linea
+            rotate(PI/val); // Rota 45 grados la linea
             branch(length * 0.75)
         pop();
         push();
@@ -71,5 +67,61 @@ window.addEventListener("wheel", function(e) {
   else
     sf *= 1.05 ;
 });
+*/
 
-  
+let sf = 1; // factor de escala del zoom
+
+
+let mx, my; // coordenadas del mouse
+let ax, ay;
+let bx, by;
+let cx, cy;
+let x, y;
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  ax = width / 2;
+  ay = 0;
+  bx = 0;
+  by = height;
+  cx = width;
+  cy = height;
+  x = random(width);
+  y = random(height);
+  background(0);
+  stroke(255);
+  strokeWeight(8);
+  point(ax, ay);
+  point(bx, by);
+  point(cx, cy);
+}
+
+function draw() {
+    //mx = mouseX;
+    //my = mouseY;
+
+    background(18,18,36);
+
+    //translate(mx, my); // Mueve la posicion de creacion de objetos a la posicion dada
+    // scale(sf); // Escala la figura al factor dado
+    //translate(-mx, -my);
+    //translate();
+  for (let i = 0; i < 100; i++) {
+    strokeWeight(2);
+    point(x, y);
+    let r = floor(random(3));
+    if (r == 0) {
+      stroke(255, 0, 255);
+      x = lerp(x, ax, 0.5);
+      y = lerp(y, ay, 0.5);
+    } else if (r == 1) {
+      stroke(0, 255, 255);
+      x = lerp(x, bx, 0.5);
+      y = lerp(y, by, 0.5);
+    } else if (r == 2) {
+      stroke(255, 255, 0);
+      x = lerp(x, cx, 0.5);
+      y = lerp(y, cy, 0.5);
+    }
+  }
+}
