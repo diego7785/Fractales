@@ -25,14 +25,15 @@ Al escoger el fractal de árbol se mostrará esta interfaz:
 
 ![arbol](assets/readmeImages/arbol.png)
 
-En la esquina superior izquierda se encuentra la flecha de ir atrás para poder volver a escoger otro fractal.
+En la esquina superior izquierda se encuentra la flecha de ir atrás para poder escoger otro fractal.
+
 En la esquina superior derecha se encuentran dos sliders con los cuales puede interactuar con el fractal:
 
-* Slider superior: Mover este slider le permitirá cambiar el ángulo de ramificación de las ramas del árbol y de esta forma obtener vistas como: 
+* Slider superior: Mover este slider le permitirá cambiar el ángulo de ramificación de las ramas del árbol y de esta forma obtener vistas como esta: 
 
 ![arbol1](assets/readmeImages/arbol1.png)
 
-Ó figuras como:
+O como esta:
 
 ![arbol2](assets/readmeImages/arbol2.png)
 
