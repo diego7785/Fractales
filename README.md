@@ -29,13 +29,26 @@ En la esquina superior izquierda se encuentra la flecha de ir atrás para poder 
 
 En la esquina superior derecha se encuentran dos sliders con los cuales puede interactuar con el fractal:
 
-* Slider superior: Mover este slider le permitirá cambiar el ángulo de ramificación de las ramas del árbol y de esta forma obtener vistas como esta: 
+* Slider superior: Mover este slider le permitirá cambiar el ángulo de ramificación de las ramas del árbol y de esta forma obtener diferentes vistas. 
 
     ![arbol1](assets/readmeImages/arbol1.gif)
 
 
-* Slider inferior: Mover este slider le permitirá quitar o agregar ramas al árbol y de esta forma ver su proceso de ramificación
+* Slider inferior: Mover este slider le permitirá quitar o agregar ramas al árbol y de esta forma ver su proceso de ramificación.
 
     ![ramificacion](assets/readmeImages/arbol2.gif)
+
+
+## Triángulo de Sierspinski
+
+Al escoger este fractal se mostrará esta interfaz:
+
+![triangulo](assets/readmeImages/triangulo.png)
+
+En la esquina superior izquierda se encuentra la flecha de ir atrás para poder escoger otro fractal.
+
+En la esquina superior derecha se encuentra un slider con el cual puede interactuar con el fractal para agregar o quitar triángulos.
+
+![agregar_triangulos](assets/readmeImages/triangulo2.gif)
 
 
