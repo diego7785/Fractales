@@ -40,7 +40,7 @@ En la esquina superior derecha se encuentran dos sliders con los cuales puede in
 
 Puede realizar el zoom usando la rueda del ratón, o usando dos dedos en el touchpad del computador, hacia arriba aumenta el zoom y hacia abajo disminuye, de igual forma mover el mouse le permite moverse mientras hace zoom
 
-![zoom](assets/readmeImages/arbol3.png)
+![zoom](assets/readmeImages/arbol3.gif)
 
 ## Triángulo de Sierspinski
 
@@ -56,6 +56,6 @@ En la esquina superior derecha se encuentra un slider con el cual puede interact
 
 Puede realizar el zoom usando la rueda del ratón, o usando dos dedos en el touchpad del computador, hacia arriba aumenta el zoom y hacia abajo disminuye, de igual forma mover el mouse le permite moverse mientras hace zoom
 
-![zoom](assets/readmeImages/triangulo3.png)
+![zoom](assets/readmeImages/triangulo3.gif)
 
 
