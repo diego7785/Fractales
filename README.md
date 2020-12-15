@@ -5,8 +5,17 @@ Johan Fernando Florez Benávides - 1734417
 
 Diego Andrés Bonilla Viáfara - 1722399
 
-Cómo ejecutar:  abrir con el navegador el archivo index.html que se encuentra en la misma carpeta que este Readme
+## Cómo ejecutar:  
+
+Abrir con el navegador el archivo index.html que se encuentra en la misma carpeta que este README
 
 
-Página principal:
+## Página principal:
 ![inicio](assets/readmeImages/inicio.png) 
+
+Al presionar en el botón de entrar se mostrará esta pantalla:
+
+![escoger](assets/readmeImages/escoger.png) 
+
+Aquí podrá escoger que fractal desea visualizar
+
