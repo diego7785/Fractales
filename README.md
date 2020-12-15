@@ -31,10 +31,14 @@ En la esquina superior derecha se encuentran dos sliders con los cuales puede in
 
 * Slider superior: Mover este slider le permitirá cambiar el ángulo de ramificación de las ramas del árbol y de esta forma obtener vistas como esta: 
 
-![arbol1](assets/readmeImages/arbol1.png)
+    ![arbol1](assets/readmeImages/arbol1.png)
 
-O como esta:
+    O como esta:
 
-![arbol2](assets/readmeImages/arbol2.png)
+    ![arbol2](assets/readmeImages/arbol2.png)
+
+* Slider inferior: Mover este slider le permitirá quitar o agregar ramas al árbol y de esta forma ver su proceso de ramificación
+
+    ![ramificacion](assets/readmeImages/arbol3.gif)
 
 
