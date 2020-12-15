@@ -1,6 +1,5 @@
 let sf = 1; // factor de escala del zoom
 
-
 let mx, my; // coordenadas del mouse
 
 function setup() {
@@ -66,10 +65,10 @@ function mousePressed() {
 
 // Implementando zoom al usar la rueda del mouse
 window.addEventListener("wheel", function(e) {
-  if (e.deltaY > 0)
-    sf *= 0.95;
-  else
-    sf *= 1.05 ;
+    if (e.deltaY > 0)
+        sf *= 0.95;
+    else
+        sf *= 1.05 ;
 });
 
   
