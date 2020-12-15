@@ -49,6 +49,6 @@ En la esquina superior izquierda se encuentra la flecha de ir atrás para poder 
 
 En la esquina superior derecha se encuentra un slider con el cual puede interactuar con el fractal para agregar o quitar triángulos.
 
-![agregar_triangulos](assets/readmeImages/triangulo2.gif)
+![agregar_triangulos](assets/readmeImages/triangulo1.gif)
 
 
