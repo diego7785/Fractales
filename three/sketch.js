@@ -5,7 +5,7 @@ let mx, my; // coordenadas del mouse
 function setup() {
     createCanvas(windowWidth, windowHeight);
 
-    // Slider para cambiar el ángulo de ramificación 
+    // Slider para cambiar el ángulo de ramificación
     slider = createSlider(1, 50, 7,0.1);
     slider.position(windowWidth-100, 10);
     slider.style('width', '80px');
@@ -32,7 +32,7 @@ function draw() {
     triangle(20, 40, 60, 15, 60, 60);
 
     // Crea la primer rama en el centro de la pantalla
-    translate(width/2, height); 
+    translate(width/2, height);
     stroke(207, 136, 70);
     branch(150);
 }
@@ -45,7 +45,7 @@ function branch(length){
     if(length > valSII){
         let val = slider.value();
 
-        push(); 
+        push();
             rotate(PI/val); // Rota PI/val grados la linea
             branch(length * 0.75)
         pop();
@@ -70,5 +70,3 @@ window.addEventListener("wheel", function(e) {
     else
         sf *= 1.05 ;
 });
-
-  

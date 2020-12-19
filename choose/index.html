@@ -8,7 +8,6 @@
 				background-color:#121224;
 			}
 
-
 			#pop{
 				position:absolute;
 				height:90%;
@@ -42,6 +41,19 @@
             }
 
             #sierspinski:hover{
+				left:34.5%;
+				width:19%;
+			}
+
+            #mandelbrot{
+                position: absolute;
+                width:18%;
+				top:45%;
+				left:35%;
+				outline: none;
+            }
+
+            #mandelbrot:hover{
 				left:34.5%;
 				width:19%;
 			}
@@ -101,7 +113,6 @@
 			<img src="../assets/img/choose.png" id="chooseText">
             <img src="../assets/img/threeButton.png" id="three">
 			<img src="../assets/img/sierspinski.png" id="sierspinski">
-            
 
 		</div>
 	</body>
@@ -114,6 +125,9 @@
         })
         document.getElementById("sierspinski").addEventListener("click", function(){
             window.location.assign("../sierspinski/index.html");
+        })
+        document.getElementById("mandelbrot").addEventListener("click", function(){
+            window.location.assign("../mandelbrot/index.html");
         })
 	</script>
 </html>
