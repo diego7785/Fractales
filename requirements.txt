@@ -14,7 +14,6 @@ dash-table==4.11.1
 dbus-python==1.2.16
 distlib==0.3.0
 distro==1.4.0
-distro-info===0.23ubuntu1
 dominate==2.6.0
 entrypoints==0.3
 filelock==3.0.12
