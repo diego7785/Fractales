@@ -68,4 +68,4 @@ En la esquina superior izquierda se encuentra la flecha de ir atrás para poder 
 
 En la esquina superior derecha se encuentra un slider con el cual puede interactuar con el fractal para iterar con el plano complejo.
 
-![iterar_en_el_plano_complejo](assets/readmeImages/mandelbrotdefinitivo.mp4)
+![iterar_en_el_plano_complejo](assets/readmeImages/mandelbrotdefinitivo.gif)
