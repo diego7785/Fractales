@@ -1,7 +1,6 @@
 appdirs==1.4.3
 blinker==1.4
 Brotli==1.0.9
-catfish==1.4.13
 certifi==2019.11.28
 chardet==3.0.4
 cliapp==1.20180812.1
