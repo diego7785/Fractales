@@ -74,7 +74,7 @@ En la esquina superior derecha se encuentra un slider con el cual puede interact
 
 Al escoger este fractal se mostrará esta interfaz:
 
-![koch](assets/readmeImages/koach.jpg)
+![koch](assets/readmeImages/koch.jpg)
 
 En la esquina superior izquierda se encuentra la flecha de ir atrás para poder escoger otro fractal.
 
