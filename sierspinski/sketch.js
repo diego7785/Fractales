@@ -9,7 +9,7 @@ function setup() {
     noStroke(); // Elimina los bordes de los triangulos
     fill(255);
 
-    // Slider para cambiar el ángulo de ramificación 
+    // Slider para cambiar el ángulo de ramificación
     slider = createSlider(1, 10, 1,1);
     slider.position(windowWidth-100, 10);
     slider.style('width', '80px');
@@ -33,15 +33,15 @@ function draw() {
     fill(255);
 
     let val = slider.value();
-    
+
     let x = width / 2 - alto / 2;
     let y = height / 2 + alto/2 - 40;
-    
+
     divide(x, y, alto, 1, val);
 }
 
 function divide(x, y, le, lvl, max) {
-    // Creo el primer triángulo 
+    // Creo el primer triángulo
     if (lvl == max) {
       CreateTriangle(x, y, le);
     } else {

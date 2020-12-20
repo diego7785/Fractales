@@ -69,3 +69,19 @@ En la esquina superior izquierda se encuentra la flecha de ir atrás para poder 
 En la esquina superior derecha se encuentra un slider con el cual puede interactuar con el fractal para iterar con el plano complejo.
 
 ![iterar_en_el_plano_complejo](assets/readmeImages/mandelbrotdefinitivo.gif)
+
+## Koch Cube
+
+Al escoger este fractal se mostrará esta interfaz:
+
+![koch](assets/readmeImages/koach.jpg)
+
+En la esquina superior izquierda se encuentra la flecha de ir atrás para poder escoger otro fractal.
+
+En la esquina superior derecha se encuentra un slider con el cual puede interactuar con el fractal para agregar o quitar cubos.
+
+![koch](assets/readmeImages/koch.gif)
+
+Puede realizar el zoom usando la rueda del ratón, o usando dos dedos en el touchpad del computador, hacia arriba aumenta el zoom y hacia abajo disminuye, de igual forma mover el mouse le permite moverse mientras hace zoom
+
+![zoom](assets/readmeImages/kochzoom.gif)
