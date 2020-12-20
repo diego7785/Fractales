@@ -13,6 +13,10 @@ Abrir con el navegador el archivo index.html que se encuentra en la misma carpet
 ## Página principal:
 ![inicio](assets/readmeImages/inicio.png)
 
+Al presionar sobre el botón de información encontrará información resumida sobre cómo usar el programa
+
+![info](assets/readmeImages/info.png)
+
 Al presionar en el botón de entrar se mostrará esta interfaz:
 
 ![escoger](assets/readmeImages/escoger.png)
