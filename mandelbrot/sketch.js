@@ -5,16 +5,85 @@ let mx, my; // coordenadas del mouse
 function setup() {
     createCanvas(windowWidth, windowHeight);
     pixelDensity(1);
-    // noLoop()
 
     // Slider para cambiar el ángulo de ramificación
     slider = createSlider(1, 50, 7,0.1);
     slider.position(windowWidth-100, 10);
     slider.style('width', '80px');
+}
 
-    sliderII = createSlider(2, 200, 7,2);
-    sliderII.position(windowWidth-100, 30);
-    sliderII.style('width', '80px');
+function draw() {
+    // Posicion del mouse
+    mx = mouseX;
+    my = mouseY;
+
+    background(0);
+
+    // Definir rango de valores en el plano complejo
+    const w = 6;
+    const h = (w * height) / width;
+    const xmin = -w/2;
+    const ymin = -h/2;
+
+    loadPixels();
+
+    // Max de iteraciones para cada punto en el plano complejo
+    let maxiterations = slider.value();
+
+    // x va de xmin a xman
+    const xmax = xmin + w;
+    // y va de ymin a ymax
+    const ymax = ymin + h;
+
+    // Valor de incremento para x y y
+    const dx = (xmax - xmin) / (width);
+    const dy = (ymax - ymin) / (height);
+
+    let y = ymin;
+    for (let j = 0; j < height; j++) {
+        let x = xmin;
+        for (let i = 0; i < width; i++) {
+            // z = z^2 + cm
+            let a = x;
+            let b = y;
+            let n = 0;
+
+            while (n < maxiterations) {
+                const aa = a * a;
+                const bb = b * b;
+                const twoab = 2.0 * a * b;
+                a = aa - bb + x;
+                b = twoab + y;
+
+                // considerando infinito como 16
+                if (dist(aa, bb, 0, 0) > 16) {
+                    break;
+                }
+
+                n++;
+            }
+
+            // Colorear cada pixel basado en cuand lejor está de inifito
+            const pix = (i+j*width)*4;
+            const norm = map(n, 0, maxiterations, 0, 1);
+            let bright = map(sqrt(norm), 0, 1, 0, 255);
+
+            if (n == maxiterations) {
+                bright = 0;
+            } else {
+                pixels[pix + 0] = bright;
+                pixels[pix + 1] = bright;
+                pixels[pix + 2] = bright;
+                pixels[pix + 3] = 255;
+            }
+
+            x += dx;
+        }
+
+        y += dy;
+    }
+
+    updatePixels();
 
     translate(mx, my); // Mueve la posicion de creacion de objetos a la posicion dada
     scale(sf); // Escala la figura al factor dado
@@ -26,84 +95,6 @@ function setup() {
     triangle(20, 40, 60, 15, 60, 60);
 
     fill(255);
-}
-
-function draw() {
-    // Posicion del mouse
-    mx = mouseX;
-    my = mouseY;
-
-    background(0);
-
-    // Establish a range of values on the complex plane
-    // A different range will allow us to "zoom" in or out on the fractal
-
-    // It all starts with the width, try higher or lower values
-    const w = 6;
-    const h = (w * height) / width;
-
-    // Start at negative half the width and height
-    const xmin = -w/2;
-    const ymin = -h/2;
-
-    // Make sure we can write to the pixels[] array.
-    // Only need to do this once since we don't do any other drawing.
-    loadPixels();
-
-    // Maximum number of iterations for each point on the complex plane
-    let maxiterations = slider.value();
-
-    // x goes from xmin to xmax
-    const xmax = xmin + w;
-    // y goes from ymin to ymax
-    const ymax = ymin + h;
-
-    // Calculate amount we increment x,y for each pixel
-    const dx = (xmax - xmin) / (width);
-    const dy = (ymax - ymin) / (height);
-
-    // Start y
-    let y = ymin;
-    for (let j = 0; j < height; j++) {
-        // Start x
-        let x = xmin;
-        for (let i = 0; i < width; i++) {
-            // Now we test, as we iterate z = z^2 + cm does z tend towards infinity?
-            let a = x;
-            let b = y;
-            let n = 0;
-            while (n < maxiterations) {
-                const aa = a * a;
-                const bb = b * b;
-                const twoab = 2.0 * a * b;
-                a = aa - bb + x;
-                b = twoab + y;
-                // Infinty in our finite world is simple, let's just consider it 16
-                if (dist(aa, bb, 0, 0) > 16) {
-                    break;  // Bail
-                }
-                n++;
-            }
-
-            // We color each pixel based on how long it takes to get to infinity
-            // If we never got there, let's pick the color black
-            const pix = (i+j*width)*4;
-            const norm = map(n, 0, maxiterations, 0, 1);
-            let bright = map(sqrt(norm), 0, 1, 0, 255);
-            if (n == maxiterations) {
-                bright = 0;
-            } else {
-                // Gosh, we could make fancy colors here if we wanted
-                pixels[pix + 0] = bright;
-                pixels[pix + 1] = bright;
-                pixels[pix + 2] = bright;
-                pixels[pix + 3] = 255;
-            }
-            x += dx;
-        }
-        y += dy;
-    }
-    updatePixels();
 }
 
 // Función para detectar click en la figura del triangulo que redirige a la página anterior
