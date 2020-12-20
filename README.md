@@ -5,19 +5,19 @@ Johan Fernando Florez Benávides - 1734417 - 3743
 
 Diego Andrés Bonilla Viáfara - 1722399 - 3743
 
-## Cómo ejecutar:  
+## Cómo ejecutar:
 
 Abrir con el navegador el archivo index.html que se encuentra en la misma carpeta que este README
 
 
 ## Página principal:
-![inicio](assets/readmeImages/inicio.png) 
+![inicio](assets/readmeImages/inicio.png)
 
 Al presionar en el botón de entrar se mostrará esta interfaz:
 
-![escoger](assets/readmeImages/escoger.png) 
+![escoger](assets/readmeImages/escoger.png)
 
-Aquí podrá escoger que fractal desea visualizar. 
+Aquí podrá escoger que fractal desea visualizar.
 
 ## Fractal de árbol
 
@@ -29,7 +29,7 @@ En la esquina superior izquierda se encuentra la flecha de ir atrás para poder 
 
 En la esquina superior derecha se encuentran dos sliders con los cuales puede interactuar con el fractal:
 
-* Slider superior: Mover este slider le permitirá cambiar el ángulo de ramificación de las ramas del árbol y de esta forma obtener diferentes vistas. 
+* Slider superior: Mover este slider le permitirá cambiar el ángulo de ramificación de las ramas del árbol y de esta forma obtener diferentes vistas.
 
     ![arbol1](assets/readmeImages/arbol1.gif)
 
@@ -58,4 +58,14 @@ Puede realizar el zoom usando la rueda del ratón, o usando dos dedos en el touc
 
 ![zoom](assets/readmeImages/triangulo3.gif)
 
+## Mandelbrot
 
+Al escoger este fractal se mostrará esta interfaz:
+
+![mandelbrot](assets/readmeImages/mandelbrot1.png)
+
+En la esquina superior izquierda se encuentra la flecha de ir atrás para poder escoger otro fractal.
+
+En la esquina superior derecha se encuentra un slider con el cual puede interactuar con el fractal para iterar con el plano complejo.
+
+![iterar_en_el_plano_complejo](assets/readmeImages/mandelbrotdefinitivo.mp4)
