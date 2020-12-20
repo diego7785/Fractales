@@ -58,18 +58,6 @@ Puede realizar el zoom usando la rueda del ratón, o usando dos dedos en el touc
 
 ![zoom](assets/readmeImages/triangulo3.gif)
 
-## Mandelbrot
-
-Al escoger este fractal se mostrará esta interfaz:
-
-![mandelbrot](assets/readmeImages/mandelbrot1.png)
-
-En la esquina superior izquierda se encuentra la flecha de ir atrás para poder escoger otro fractal.
-
-En la esquina superior derecha se encuentra un slider con el cual puede interactuar con el fractal para iterar con el plano complejo.
-
-![iterar_en_el_plano_complejo](assets/readmeImages/mandelbrotdefinitivo.gif)
-
 ## Koch Cube
 
 Al escoger este fractal se mostrará esta interfaz:
